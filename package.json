@@ -1,0 +1,15 @@
+{
+  "name": "yes-site-image-optimizer",
+  "version": "1.0.0",
+  "description": "Image optimization script for the Yes site. Generates AVIF/WebP/JPEG resized images into /assets/optimized.",
+  "main": "scripts/optimize-images.js",
+  "scripts": {
+    "optimize-images": "node ./scripts/optimize-images.js"
+  },
+  "author": "wilsonmlojano-blip",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.32.0",
+    "glob": "^10.2.7"
+  }
+}

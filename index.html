@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Feliz cumpleaños ❤️" />
   <meta property="og:description" content="Un pequeño pedacito de nuestra historia, para ti." />
-  <meta property="og:image" content="/assets/og-image.jpg" />
+  <meta property="og:image" content="/assets/optimized/hero-1200.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <title>Feliz cumpleaños ❤️</title>
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="/styles.css">
 
   <!-- Preload hero image for LCP (adjust path & format) -->
-  <link rel="preload" as="image" href="/assets/hero.jpg">
+  <link rel="preload" as="image" href="/assets/optimized/hero-1200.jpg">
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -32,9 +32,9 @@
   <header class="hero" role="banner" aria-label="Hero - Feliz cumpleaños">
     <!-- Responsive hero image: provide multiple formats & sizes -->
     <picture>
-      <source srcset="/assets/hero.avif" type="image/avif">
-      <source srcset="/assets/hero.webp" type="image/webp">
-      <img src="/assets/hero.jpg" alt="Foto nuestra en un recuerdo especial" class="hero-img" width="1600" height="900" fetchpriority="high">
+      <source type="image/avif" srcset="/assets/optimized/hero-400.avif 400w, /assets/optimized/hero-800.avif 800w, /assets/optimized/hero-1200.avif 1200w, /assets/optimized/hero-1600.avif 1600w" sizes="100vw">
+      <source type="image/webp" srcset="/assets/optimized/hero-400.webp 400w, /assets/optimized/hero-800.webp 800w, /assets/optimized/hero-1200.webp 1200w, /assets/optimized/hero-1600.webp 1600w" sizes="100vw">
+      <img src="/assets/optimized/hero-1200.jpg" alt="Foto nuestra en un recuerdo especial" class="hero-img" width="1600" height="900" fetchpriority="high" loading="eager" srcset="/assets/optimized/hero-400.jpg 400w, /assets/optimized/hero-800.jpg 800w, /assets/optimized/hero-1200.jpg 1200w, /assets/optimized/hero-1600.jpg 1600w" sizes="100vw">
     </picture>
 
     <div class="hero-content">
@@ -86,22 +86,25 @@
       <div class="grid" role="list">
         <article class="card tall" role="listitem">
           <picture>
-            <source srcset="/assets/photo1.webp" type="image/webp">
-            <img src="/assets/photo1.jpg" alt="Nosotros en la playa sonriendo" width="800" height="600" loading="lazy">
+            <source type="image/avif" srcset="/assets/optimized/photo1-400.avif 400w, /assets/optimized/photo1-800.avif 800w, /assets/optimized/photo1-1200.avif 1200w" sizes="(max-width:700px) 100vw, 50vw">
+            <source type="image/webp" srcset="/assets/optimized/photo1-400.webp 400w, /assets/optimized/photo1-800.webp 800w, /assets/optimized/photo1-1200.webp 1200w" sizes="(max-width:700px) 100vw, 50vw">
+            <img src="/assets/optimized/photo1-800.jpg" alt="Nosotros en la playa sonriendo" width="800" height="600" loading="lazy" srcset="/assets/optimized/photo1-400.jpg 400w, /assets/optimized/photo1-800.jpg 800w, /assets/optimized/photo1-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 50vw">
           </picture>
         </article>
 
         <article class="card" role="listitem">
           <picture>
-            <source srcset="/assets/photo2.webp" type="image/webp">
-            <img src="/assets/photo2.jpg" alt="Café y un libro en la mesa" width="800" height="600" loading="lazy">
+            <source type="image/avif" srcset="/assets/optimized/photo2-400.avif 400w, /assets/optimized/photo2-800.avif 800w, /assets/optimized/photo2-1200.avif 1200w" sizes="(max-width:700px) 100vw, 50vw">
+            <source type="image/webp" srcset="/assets/optimized/photo2-400.webp 400w, /assets/optimized/photo2-800.webp 800w, /assets/optimized/photo2-1200.webp 1200w" sizes="(max-width:700px) 100vw, 50vw">
+            <img src="/assets/optimized/photo2-800.jpg" alt="Café y un libro en la mesa" width="800" height="600" loading="lazy" srcset="/assets/optimized/photo2-400.jpg 400w, /assets/optimized/photo2-800.jpg 800w, /assets/optimized/photo2-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 50vw">
           </picture>
         </article>
 
         <article class="card" role="listitem">
           <picture>
-            <source srcset="/assets/photo3.webp" type="image/webp">
-            <img src="/assets/photo3.jpg" alt="Paseo bajo las luces de la ciudad" width="800" height="600" loading="lazy">
+            <source type="image/avif" srcset="/assets/optimized/photo3-400.avif 400w, /assets/optimized/photo3-800.avif 800w, /assets/optimized/photo3-1200.avif 1200w" sizes="(max-width:700px) 100vw, 50vw">
+            <source type="image/webp" srcset="/assets/optimized/photo3-400.webp 400w, /assets/optimized/photo3-800.webp 800w, /assets/optimized/photo3-1200.webp 1200w" sizes="(max-width:700px) 100vw, 50vw">
+            <img src="/assets/optimized/photo3-800.jpg" alt="Paseo bajo las luces de la ciudad" width="800" height="600" loading="lazy" srcset="/assets/optimized/photo3-400.jpg 400w, /assets/optimized/photo3-800.jpg 800w, /assets/optimized/photo3-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 50vw">
           </picture>
         </article>
 
